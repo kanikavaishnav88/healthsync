@@ -34,7 +34,7 @@ You need [Node.js](https://nodejs.org) installed
 
 
 
-Project Structure
+## Project Structure
 ```
 app/                 Each folder here is one page (Next.js "App Router")
   page.js            Landing page
