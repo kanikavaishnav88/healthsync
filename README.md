@@ -15,13 +15,11 @@ college pitch. It uses realistic sample data (no real backend, no real patient d
 - Nearby doctors/labs/pharmacies list
 - Accessibility toolbar: larger text and high-contrast mode
 
-Everything runs on mock data defined in `lib/mockData.js`. There is a working demo
-login (no real password, no real accounts) so the app feels real during a presentation.
+
 
 ## Running it on your laptop
 
-You need [Node.js](https://nodejs.org) installed first (version 18 or newer - the
-installer from nodejs.org is the easiest way).
+You need [Node.js](https://nodejs.org) installed 
 
 1. Open a terminal in this folder.
 2. Install the dependencies (only needed once):
