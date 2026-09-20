@@ -36,39 +36,6 @@ installer from nodejs.org is the easiest way).
 
 That's it - the whole app runs on your laptop, nothing is uploaded anywhere.
 
-## Putting it on GitHub
-
-1. Create a free account at [github.com](https://github.com) if you don't have one.
-2. Create a new repository (button in the top right, "New repository"). Name it
-   `healthsync`. Leave it empty (don't add a README there).
-3. Back in your terminal, inside this folder, run:
-   ```
-   git init
-   git add .
-   git commit -m "Initial HealthSync prototype"
-   git branch -M main
-   git remote add origin https://github.com/YOUR-USERNAME/healthsync.git
-   git push -u origin main
-   ```
-   (Replace `YOUR-USERNAME` with your actual GitHub username - GitHub shows you this
-   exact command on the empty repository page too.)
-
-Now anyone can see your code at `github.com/YOUR-USERNAME/healthsync`.
-
-## Putting it online with a live link (Vercel)
-
-Vercel is made by the creators of Next.js and has a free tier that's perfect for this.
-
-1. Go to [vercel.com](https://vercel.com) and sign up using your GitHub account.
-2. Click "Add New Project."
-3. Select your `healthsync` repository from the list.
-4. Leave all settings as default and click "Deploy."
-5. In about a minute, Vercel gives you a live link like `healthsync-yourname.vercel.app`
-   that anyone can open - no installation needed.
-
-Any time you push new changes to GitHub, Vercel automatically updates the live link.
-
-## Project structure (for your reference)
 
 ```
 app/                 Each folder here is one page (Next.js "App Router")
@@ -86,10 +53,3 @@ components/          Reusable pieces (buttons, cards, navigation)
 lib/                 Mock data and shared logic (auth, accessibility, records)
 ```
 
-## Turning this into a real product later
-
-Right now all data lives in `lib/mockData.js` and in your browser's local storage.
-To make it real, the next step is connecting a database (Supabase is a good free
-option) - each page already reads data in a shape that maps directly onto simple
-database tables, so the page code won't need to change much, only where the data
-comes from.
