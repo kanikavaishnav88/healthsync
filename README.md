@@ -34,9 +34,9 @@ installer from nodejs.org is the easiest way).
    ```
 4. Open your browser to **http://localhost:3000**
 
-That's it - the whole app runs on your laptop, nothing is uploaded anywhere.
 
 
+Project Structure
 ```
 app/                 Each folder here is one page (Next.js "App Router")
   page.js            Landing page
